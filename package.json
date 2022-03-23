@@ -1,0 +1,30 @@
+{
+  "name": "graphql-apollo-server-poc",
+  "version": "1.0.0",
+  "description": "GraphQL API with apollo server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./api/index.js",
+    "json-server": "json-server --watch ./api/data/data.json"
+  },
+  "keywords": [
+    "GraphQL",
+    "NodeJS",
+    "Apollo Server"
+  ],
+  "author": "Guilherme Gules Moreira",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.0"
+  },
+  "dependencies": {
+    "apollo-server": "^3.6.5",
+    "graphql": "^16.3.0",
+    "json-server": "^0.17.0"
+  }
+}
