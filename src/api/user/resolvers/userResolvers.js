@@ -1,17 +1,5 @@
-const users = [
-  {
-    name: 'Guilherme',
-    active: true,
-  },
-  {
-    name: 'Mary',
-    active: false,
-  },
-];
-
 export const userResolvers = {
   query: {
-    users: () => users,
-    firstUser: () => users[0]
+    users: (root, args, context, info) => context.dataSources.usersAPI.getUsers(),
   }
 }

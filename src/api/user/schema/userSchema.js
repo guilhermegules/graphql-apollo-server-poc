@@ -9,6 +9,5 @@ export const userSchema = gql`
 
   type Query {
     users: [User]
-    firstUser: User
   }
 `;
