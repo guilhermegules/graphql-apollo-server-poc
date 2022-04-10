@@ -8,6 +8,16 @@ export class UsersAPI extends RESTDataSource {
   }
 
   async getUsers() {
-    return this.get('/users');
+    const users = await this.get('/users');
+
+    return users.map(async user => ({
+      ...user,
+      role: await this.get(`/roles/${user.role}`)
+    }))
+  }
+
+  async getUserById(id) {
+    return this.get(`/users/${id}`)
+      .then(async user => ({...user, role: await this.get(`/roles/${user.role}`)}));
   }
 }
