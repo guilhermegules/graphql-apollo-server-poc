@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon -e js,json,graphql ./api/index.js",
-    "json-server": "json-server --watch ./api/data/data.json"
+    "start": "nodemon -e js,json,graphql index.js",
+    "json-server": "json-server --watch ./src/api/data/data.json"
   },
   "keywords": [
     "GraphQL",
@@ -24,6 +24,7 @@
     "prettier": "^2.6.0"
   },
   "dependencies": {
+    "apollo-datasource-rest": "^3.5.2",
     "apollo-server": "^3.6.5",
     "graphql": "^16.3.0",
     "graphql-tools": "^8.2.3",
