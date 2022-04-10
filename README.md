@@ -91,6 +91,19 @@ In addition to the types mentioned, GraphQL still has more basic types:
 -   Interface
 -   Union
 
+## Resolvers
+
+Resolvers have four parameters
+
+- `root or parent`: the result of the call at the previous "level" of the query
+- `args`: the arguments that the resolver can receive from the query, for example the data for a new User or an ID
+- `context`: an object with the context for GraphQL, such as data about the connection, user permissions, etc
+- `info`: the tree representation of the query or mutation
+
 ## Useful links
 
--   [Apollo server docs](https://www.apollographql.com/docs/apollo-server/)
+- [Apollo server docs](https://www.apollographql.com/docs/apollo-server/)
+- [SQL Data Source with Apollo Server](https://github.com/cvburgess/SQLDataSource)
+- [Mongo Data Source with Apollo Server](https://github.com/GraphQLGuide/apollo-datasource-mongodb/)
+- [GraphQL Data Source with Apollo Server](https://github.com/poetic/apollo-datasource-graphql)
+- [A Deep Dive on Apollo Data Source](https://www.apollographql.com/blog/backend/data-sources/a-deep-dive-on-apollo-data-sources/)
