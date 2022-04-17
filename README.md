@@ -144,3 +144,6 @@ Resolvers have four parameters
 - [A Deep Dive on Apollo Data Source](https://www.apollographql.com/blog/backend/data-sources/a-deep-dive-on-apollo-data-sources/)
 - [GraphQL Best Practices Resources and Design Patterns](https://www.moesif.com/blog/api-guide/graphql-best-practices-resources-and-design-patterns/)
 - [GraphQL Best Practices](https://graphql.org/learn/best-practices/)
+- [graphql/type](https://graphql.org/graphql-js/type/)
+- [Constructing Types](https://graphql.org/graphql-js/constructing-types/)
+- [Unions and interfaces](https://www.apollographql.com/docs/apollo-server/schema/unions-interfaces/)
