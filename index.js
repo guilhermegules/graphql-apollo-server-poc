@@ -9,6 +9,9 @@ const typeDefs = [userSchema];
 const resolvers = {
   Query: {
     ...userResolvers.query
+  },
+  Mutation: {
+    ...userResolvers.mutation
   }
 };
 
@@ -22,4 +25,4 @@ const server = new ApolloServer({
 
 server.listen().then(({url}) => {
   console.log(`🚀 Server ready at ${url}`)
-})
+});
